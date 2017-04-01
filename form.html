@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Форми</title>
+<form action="formdata.php" method="POST" name="form1">
+<fieldset>
+<legend>Введення особистих даних</legend>
+<p><label>Введіть ім'я<input type="text" name="name" size="30" maxlength="10"></label></p>
+<p><label>Введіть пароль<input type="password" name="name" size="30" maxlength="10"></label></p>
+</fieldset>
+<fieldset>
+<legend>Питання</legend>
+<p>Ви самостійно вивчаете програмування?</p>
+<p><label>Так<input type="radio" name="time" value="yes" checked></label>
+   <label>Ні<input type="radio" name="time" value="no"></label></p>
+<p>Якими середовищами програмування Ви користуетесь?</p>
+<p><label><input type="checkbox" name="dev" >Dev C++</label></p>
+<p><label><input type="checkbox" name="cod">CodeBlock</label></p>
+<p><label><input type="checkbox" name="vs">Visio Studio</label></p>
+<p><label><input type="checkbox" name="ec">Eclipce</label></p>
+<p><label><input type="checkbox" name="oth"disabled>Інші</label></p>
+
+<p>Скільки часу в тиждень Ви тратите на самостійну роботу?</p>
+<select name="work" size="3">
+	<option>2</option>
+	<option>3</option>
+	<option selected>4</option>
+	<option>5</option>
+	<option>6+</option>
+</select>
+
+</fieldset>
+
+<p><label for="text">Опишіть труднощі з якими Ви стикнулись підчас вивчення програмування</p>
+<p><textarea name="text" cols="70" rows="6"id="text" readonly> </textarea></p>
+
+<p><input type="reset" name="reset" value="Очистити">
+<input type="submit" name="submit" value="Відправити"></p>
+<p><input type="image" src="images/imegbatton.jpg"name="imageButton"></p>
+<p><input type="button" name="button" value="Кнопка"></p>
+</form>
+</head>
+<body>
